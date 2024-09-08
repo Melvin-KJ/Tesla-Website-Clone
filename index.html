@@ -1,15 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tesla Website</title>
+    <!-- fontawesome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <!-- tailwind cdn -->
-     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
     <!-- css styles -->
-    <link rel="stylesheet" href="./style.css">
-</head>
-<body>
-    
-</body>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- header section starts -->
+    <header
+      class="fixed w-full z-50 flex items-center justify-between px-10 py-4 bg-transparent text-white"
+    >
+      <div class="logo">
+        <a href="#" class="tesla-logo">
+          <img
+            class="h-4 w-full"
+            src="./assets/tesla-logo.svg"
+            alt="tesla-logo"
+          />
+        </a>
+      </div>
+      <nav class="text-sm font-semibold space-x-4">
+        <a href="#" class="px-2 hover:underline hover:underline-offset-8"
+          >Vehicles</a
+        >
+        <a href="#" class="px-2 hover:underline hover:underline-offset-8"
+          >Energy</a
+        >
+        <a href="#" class="px-2 hover:underline hover:underline-offset-8"
+          >Charging</a
+        >
+        <a href="#" class="px-2 hover:underline hover:underline-offset-8"
+          >Discover</a
+        >
+        <a href="#" class="px-2 hover:underline hover:underline-offset-8"
+          >Shop</a
+        >
+      </nav>
+      <div class="space-x-2">
+        <a href="https://www.tesla.com/support"
+          ><i class="text-lg fa-regular fa-circle-question"></i
+        ></a>
+        <a href="#"><i class="text-lg fa-solid fa-globe"></i></a>
+        <a
+          href="https://auth.tesla.com/en_us/oauth2/v1/authorize?redirect_uri=https%3A%2F%2Fwww.tesla.com%2Fteslaaccount%2Fowner-xp%2Fauth%2Fcallback&response_type=code&client_id=ownership&scope=offline_access%20openid%20ou_code%20email%20phone&audience=https%3A%2F%2Fownership.tesla.com%2F&locale=en-US"
+          ><i class="text-lg fa-regular fa-circle-user"></i
+        ></a>
+      </div>
+    </header>
+    <!-- header section ends -->
+    <!-- hero section starts -->
+    <section
+      id="hero"
+      class="relative h-screen bg-cover bg-center"
+      style="background-image: url('./assets/Model-Y.png')"
+    >
+      <div
+        class="absolute inset-x-0 top-24 flex flex-col items-center justify-center text-white space-y-2"
+      >
+        <h1 class="md:text-5xl font-bold">Model-Y</h1>
+        <p
+          class="md:text-2xl font-bold underline underline-offset-8 decoration-1 hover:decoration-2 cursor-pointer"
+        >
+          1.99% APR Financing
+        </p>
+        <p class="md:text-lg">From $31,490</p>
+      </div>
+      <div
+        class="absolute inset-x-0 bottom-8 flex items-center justify-center text-white space-x-4"
+      >
+        <button
+          class="px-24 py-2 text-base text-bold bg-blue-600 rounded hover:bg-blue-700"
+        >
+          Order Now
+        </button>
+        <button
+          class="px-24 py-2 text-base text-bold bg-slate-50 text-black rounded hover:bg-gray-200"
+        >
+          Demo Drive
+        </button>
+      </div>
+    </section>
+    <!-- hero section starts -->
+  </body>
 </html>
