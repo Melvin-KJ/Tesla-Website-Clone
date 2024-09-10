@@ -31,7 +31,8 @@
           />
         </a>
       </div>
-      <nav class="text-sm font-semibold space-x-4">
+      <!-- Nav Links-->
+      <nav class="text-sm font-semibold hidden md:flex space-x-4">
         <a href="#" class="px-2 hover:underline hover:underline-offset-8"
           >Vehicles</a
         >
@@ -48,7 +49,8 @@
           >Shop</a
         >
       </nav>
-      <div class="space-x-2">
+      <!-- Icons-->
+      <div class="hidden md:flex space-x-2">
         <a href="https://www.tesla.com/support"
           ><i class="text-lg fa-regular fa-circle-question"></i
         ></a>
@@ -58,43 +60,111 @@
           ><i class="text-lg fa-regular fa-circle-user"></i
         ></a>
       </div>
+      <!-- menu button -->
+      <button
+        id="menuButton"
+        class="md:hidden px-4 py-2 text-base absolute top-1 right-6"
+      >
+        Menu
+      </button>
+      <!-- mobile menu -->
+      <div
+        id="mobileMenu"
+        class="fixed inset-0 hidden flex-col items-center justify-center text-black bg-white z-50"
+      >
+        <button id="closeButton" class="absolute top-4 right-4 text-sm">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+        <nav class="flex flex-col space-y-6 w-full pt-12 text-lg">
+          <a
+            href="#"
+            class="flex justify-between items-center w-full py-2 px-4"
+          >
+            <span>Vehicles</span>
+            <i class="fa-solid fa-chevron-right"></i>
+          </a>
+          <a
+            href="#"
+            class="flex justify-between items-center w-full py-2 px-4"
+          >
+            <span>Energy</span>
+            <i class="fa-solid fa-chevron-right"></i>
+          </a>
+          <a
+            href="#"
+            class="flex justify-between items-center w-full py-2 px-4"
+          >
+            <span>Charging</span>
+            <i class="fa-solid fa-chevron-right"></i>
+          </a>
+          <a
+            href="#"
+            class="flex justify-between items-center w-full py-2 px-4"
+          >
+            <span>Discover</span>
+            <i class="fa-solid fa-chevron-right"></i>
+          </a>
+          <a href="#" class="w-full py-2 px-4">
+            <span>Shop</span>
+          </a>
+          <a href="#" class="w-full py-2 px-4">
+            <span>Support</span>
+          </a>
+          <a
+            href="#"
+            class="flex justify-between items-center w-full py-2 px-4"
+          >
+            <div class="flex items-center">
+              <i class="fa-solid fa-globe px-2"></i>
+              <span> United States</span>
+            </div>
+            <i class="fa-solid fa-chevron-right"></i>
+          </a>
+          <a href="#" class="w-full py-2 px-4">
+            <div>
+              <i class="fa-regular fa-circle-user px-2"></i>
+              <span>Account</span>
+            </div>
+          </a>
+        </nav>
+      </div>
     </header>
     <!-- header section ends -->
-    
+
     <!-- hero section starts -->
     <section
       id="hero"
-      class="relative h-screen bg-cover bg-center"
+      class="relative bg-center bg-cover bg-no-repeat h-screen w-full"
       style="background-image: url('./assets/Model-Y.png')"
     >
       <div
-        class="absolute inset-x-0 top-24 flex flex-col items-center justify-center text-white space-y-2"
+        class="absolute inset-x-0 top-20 flex flex-col items-center justify-center text-white space-y-2"
       >
-        <h1 class="md:text-5xl font-bold">Model-Y</h1>
+        <h1 class="text-2xl sm:text-5xl font-bold">Model-Y</h1>
         <p
-          class="md:text-2xl font-bold underline underline-offset-8 decoration-1 hover:decoration-2 cursor-pointer"
+          class="text-lg sm:text-2xl font-bold underline underline-offset-8 decoration-1 hover:decoration-2 cursor-pointer"
         >
           1.99% APR Financing
         </p>
-        <p class="md:text-lg">From $31,490</p>
+        <p class="sm:text-lg">From $31,490</p>
       </div>
       <div
         class="absolute inset-x-0 bottom-8 flex items-center justify-center text-white space-x-4"
       >
         <button
-          class="px-24 py-2 text-base text-bold bg-blue-600 rounded hover:bg-blue-700"
+          class="px-6 text-sm md:px-24 py-2 md:text-base font-bold bg-blue-600 rounded hover:bg-blue-700"
         >
           Order Now
         </button>
         <button
-          class="px-24 py-2 text-base text-bold bg-slate-50 text-black rounded hover:bg-gray-200"
+          class="px-6 text-sm md:px-24 py-2 md:text-base font-bold bg-slate-50 text-slate-700 rounded hover:bg-gray-200"
         >
           Demo Drive
         </button>
       </div>
     </section>
-    <!-- hero section starts -->
-    
+    <!-- hero section ends -->
+
     <!-- Model-3 section starts -->
     <section
       id="model-3"
@@ -102,33 +172,33 @@
       style="background-image: url('./assets/Homepage-Model-3-Desktop-US.png')"
     >
       <div
-        class="absolute inset-x-0 top-24 flex flex-col items-center justify-center text-white space-y-2"
+        class="absolute inset-x-0 top-12 flex flex-col items-center justify-center text-white space-y-2"
       >
-        <h1 class="md:text-5xl font-bold">Model 3</h1>
+        <h1 class="sm:text-5xl font-bold">Model 3</h1>
         <p
-          class="md:text-2xl font-bold underline underline-offset-8 decoration-1 hover:decoration-2 cursor-pointer"
+          class="sm:text-2xl font-bold underline underline-offset-8 decoration-1 hover:decoration-2 cursor-pointer"
         >
           1.99% APR Financing
         </p>
-        <p class="md:text-lg">From $34,990</p>
+        <p class="sm:text-lg">From $34,990</p>
       </div>
       <div
         class="absolute inset-x-0 bottom-8 flex items-center justify-center text-white space-x-4"
       >
         <button
-          class="px-24 py-2 text-base text-bold bg-blue-600 rounded hover:bg-blue-700"
+          class="px-12 text-sm md:px-24 py-2 md:text-base font-bold bg-blue-600 rounded hover:bg-blue-700"
         >
           Order Now
         </button>
         <button
-          class="px-24 py-2 text-base text-bold bg-slate-50 text-black rounded hover:bg-gray-200"
+          class="px-6 text-sm md:px-24 py-2 md:text-base font-bold bg-slate-50 text-slate-700 rounded hover:bg-gray-200"
         >
           Experience Model 3
         </button>
       </div>
     </section>
     <!-- Model-3 section ends -->
-    
+
     <!-- Model-X section starts -->
     <section
       id="model-x"
@@ -136,12 +206,12 @@
       style="background-image: url('./assets/Homepage-Model-X-Desktop-US.png')"
     >
       <div
-        class="absolute inset-x-0 top-24 flex flex-col items-center justify-center text-white space-y-2"
+        class="absolute inset-x-0 top-12 flex flex-col items-center justify-center text-white space-y-2"
       >
-        <h1 class="md:text-5xl font-bold">Model X</h1>
-        <p class="md:text-lg">From $65,990</p>
+        <h1 class="sm:text-5xl font-bold">Model X</h1>
+        <p class="sm:text-lg">From $65,990</p>
         <p
-          class="md:text-2xl font-bold underline underline-offset-8 decoration-1 hover:decoration-2 cursor-pointer text-center"
+          class="sm:text-2xl font-bold underline underline-offset-8 decoration-1 hover:decoration-2 cursor-pointer text-center"
         >
           After Federal Tax Credit $7,500<br />
           and Est. Gas Savings $6,500
@@ -151,19 +221,19 @@
         class="absolute inset-x-0 bottom-8 flex items-center justify-center text-white space-x-4"
       >
         <button
-          class="px-24 py-2 text-base text-bold bg-blue-600 rounded hover:bg-blue-700"
+          class="px-6 text-sm md:px-24 py-2 md:text-base font-bold bg-blue-600 rounded hover:bg-blue-700"
         >
           Order Now
         </button>
         <button
-          class="px-24 py-2 text-base text-bold bg-slate-50 text-black rounded hover:bg-gray-200"
+          class="px-6 text-sm md:px-24 py-2 md:text-base font-bold bg-slate-50 text-slate-700 rounded hover:bg-gray-200"
         >
           Demo Drive
         </button>
       </div>
     </section>
     <!-- Model-X section ends -->
-    
+
     <!-- Model-S section starts -->
     <section
       id="model-s"
@@ -171,12 +241,12 @@
       style="background-image: url('./assets/Homepage-Model-S-Desktop-US.png')"
     >
       <div
-        class="absolute inset-x-0 top-24 flex flex-col items-center justify-center text-white space-y-2"
+        class="absolute inset-x-0 top-12 flex flex-col items-center justify-center text-white space-y-2"
       >
-        <h1 class="md:text-5xl font-bold">Model S</h1>
-        <p class="md:text-lg">From $68,490</p>
+        <h1 class="sm:text-5xl font-bold">Model S</h1>
+        <p class="sm:text-lg">From $68,490</p>
         <p
-          class="md:text-2xl font-bold underline underline-offset-8 decoration-1 hover:decoration-2 cursor-pointer text-center"
+          class="sm:text-2xl font-bold underline underline-offset-8 decoration-1 hover:decoration-2 cursor-pointer text-center"
         >
           After Est. Gas Savings $6,500
         </p>
@@ -185,19 +255,19 @@
         class="absolute inset-x-0 bottom-8 flex items-center justify-center text-white space-x-4"
       >
         <button
-          class="px-24 py-2 text-base text-bold bg-blue-600 rounded hover:bg-blue-700"
+          class="px-6 text-sm md:px-24 py-2 md:text-base font-bold bg-blue-600 rounded hover:bg-blue-700"
         >
           Order Now
         </button>
         <button
-          class="px-24 py-2 text-base text-bold bg-slate-50 text-black rounded hover:bg-gray-200"
+          class="px-6 text-sm md:px-24 py-2 md:text-base font-bold bg-slate-50 text-slate-700 rounded hover:bg-gray-200"
         >
           Demo Drive
         </button>
       </div>
     </section>
     <!-- Model-S section ends -->
-    
+
     <!-- Cybertruck section starts -->
     <section
       id="cybertruck"
@@ -207,7 +277,7 @@
       "
     >
       <div
-        class="absolute inset-x-0 top-16 flex flex-col items-center justify-center text-white"
+        class="absolute inset-x-0 top-12 flex flex-col items-center justify-center text-white"
       >
         <img
           class="h-36 w-full"
@@ -224,19 +294,19 @@
         class="absolute inset-x-0 bottom-8 flex items-center justify-center text-white space-x-4"
       >
         <button
-          class="uppercase px-24 py-3 text-zinc-300 text-sm text-bold bg-zinc-900 rounded hover:bg-blue-700"
+          class="uppercase px-6 md:px-24 py-3 text-zinc-300 text-sm text-bold bg-zinc-900 rounded hover:bg-blue-700"
         >
           Order Now
         </button>
         <button
-          class="uppercase px-24 py-3 text-zinc-300 text-sm text-bold bg-zinc-900 rounded hover:bg-gray-200"
+          class="uppercase px-6 md:px-24 py-3 text-zinc-300 text-sm text-bold bg-zinc-900 rounded hover:bg-gray-200"
         >
           Demo Drive
         </button>
       </div>
     </section>
     <!-- Cybertruck section ends -->
-    
+
     <!-- Solar panel section starts -->
     <section
       id="solar-panel"
@@ -246,11 +316,11 @@
       "
     >
       <div
-        class="absolute inset-x-0 top-24 flex flex-col items-center justify-center text-white space-y-2"
+        class="absolute inset-x-0 top-12 flex flex-col items-center justify-center text-white space-y-2"
       >
-        <h1 class="md:text-5xl font-bold">Solar Panels</h1>
+        <h1 class="sm:text-5xl font-bold">Solar Panels</h1>
         <p
-          class="md:text-2xl font-bold underline underline-offset-8 decoration-1 hover:decoration-2 cursor-pointer text-center"
+          class="sm:text-2xl font-bold underline underline-offset-8 decoration-1 hover:decoration-2 cursor-pointer text-center"
         >
           Schedule a Virtual Consultation
         </p>
@@ -259,19 +329,19 @@
         class="absolute inset-x-0 bottom-8 flex items-center justify-center text-white space-x-4"
       >
         <button
-          class="px-24 py-2 text-base text-bold bg-blue-600 rounded hover:bg-blue-700"
+          class="px-6 text-sm md:px-24 py-2 md:text-base font-bold bg-blue-600 rounded hover:bg-blue-700"
         >
           Order Now
         </button>
         <button
-          class="px-24 py-2 text-base text-bold bg-slate-50 text-black rounded hover:bg-gray-200"
+          class="px-6 text-sm md:px-24 py-2 md:text-base font-bold bg-slate-50 text-slate-700 rounded hover:bg-gray-200"
         >
           Learn More
         </button>
       </div>
     </section>
     <!-- Solar panel section ends -->
-    
+
     <!-- Solar roof section starts -->
     <section
       id="solar-roof"
@@ -281,10 +351,10 @@
       "
     >
       <div
-        class="absolute inset-x-0 top-24 flex flex-col items-center justify-center text-white space-y-2"
+        class="absolute inset-x-0 top-12 flex flex-col items-center justify-center text-white space-y-2"
       >
-        <h1 class="md:text-5xl font-bold">Solar Roof</h1>
-        <p class="md:text-2xl font-bold text-center">
+        <h1 class="sm:text-5xl font-bold">Solar Roof</h1>
+        <p class="sm:text-2xl font-bold text-center">
           Produce Clean Energy From Your Roof
         </p>
       </div>
@@ -292,19 +362,19 @@
         class="absolute inset-x-0 bottom-8 flex items-center justify-center text-white space-x-4"
       >
         <button
-          class="px-24 py-2 text-base text-bold bg-blue-600 rounded hover:bg-blue-700"
+          class="px-6 text-sm md:px-24 py-2 md:text-base font-bold bg-blue-600 rounded hover:bg-blue-700"
         >
           Order Now
         </button>
         <button
-          class="px-24 py-2 text-base text-bold bg-slate-50 text-black rounded hover:bg-gray-200"
+          class="px-6 text-sm md:px-24 py-2 md:text-base font-bold bg-slate-50 text-slate-700 rounded hover:bg-gray-200"
         >
           Learn More
         </button>
       </div>
     </section>
     <!-- Solar roof section ends -->
-    
+
     <!-- Powerwall section starts -->
     <section
       id="powerwall"
@@ -314,20 +384,20 @@
       "
     >
       <div
-        class="absolute inset-x-0 top-24 flex flex-col items-center justify-center text-white space-y-2"
+        class="absolute inset-x-0 top-12 flex flex-col items-center justify-center text-white space-y-2"
       >
-        <h1 class="md:text-5xl font-bold">Powerwall</h1>
+        <h1 class="sm:text-5xl font-bold">Powerwall</h1>
       </div>
       <div
         class="absolute inset-x-0 bottom-8 flex items-center justify-center text-white space-x-4"
       >
         <button
-          class="px-24 py-2 text-base text-bold bg-blue-600 rounded hover:bg-blue-700"
+          class="px-6 text-sm md:px-24 py-2 md:text-base font-bold bg-blue-600 rounded hover:bg-blue-700"
         >
           Order Now
         </button>
         <button
-          class="px-24 py-2 text-base text-bold bg-slate-50 text-black rounded hover:bg-gray-200"
+          class="px-6 text-sm md:px-24 py-2 md:text-base font-bold bg-slate-50 text-slate-700 rounded hover:bg-gray-200"
         >
           Learn More
         </button>
@@ -344,15 +414,15 @@
       "
     >
       <div
-        class="absolute inset-x-0 top-24 flex flex-col items-center justify-center text-white space-y-2"
+        class="absolute inset-x-0 top-12 flex flex-col items-center justify-center text-white space-y-2"
       >
-        <h1 class="md:text-6xl font-bold">Accessories</h1>
+        <h1 class="sm:text-6xl font-bold">Accessories</h1>
       </div>
       <div
         class="absolute inset-x-0 bottom-8 flex items-center justify-center text-white space-x-4"
       >
         <button
-          class="px-24 py-2 text-base text-bold bg-blue-600 rounded hover:bg-blue-700"
+          class="px-6 text-sm md:px-24 py-2 md:text-base font-bold bg-blue-600 rounded hover:bg-blue-700"
         >
           Shop Now
         </button>
@@ -360,18 +430,28 @@
     </section>
     <!-- Accessories section ends -->
 
-  <!-- footer section starts -->
-  <footer class="relative px-10 py-10 h-24 bg-black text-white">
-    <nav class="flex justify-center items-center text-sm font-semibold space-x-4">
-      <a class="text-xs" href="https://www.tesla.com/about">Tesla © 2024</a>
-      <a class="text-xs" href="https://www.tesla.com/legal">Privacy & Legal</a>
-      <a class="text-xs" href="https://service.tesla.com/vin-recall-search">Vehicle Recalls</a>
-      <a class="text-xs" href="https://www.tesla.com/contact">Contact</a>
-      <a class="text-xs" href="https://www.tesla.com/blog">News</a>
-      <a class="text-xs" href="https://www.tesla.com/updates">Get Updates</a>
-      <a class="text-xs" href="https://www.tesla.com/findus/list">Locations</a>
-    </nav>
-  </footer>
-  <!-- footer section ends -->
+    <!-- footer section starts -->
+    <footer class="relative px-10 py-10 h-full bg-black text-white">
+      <nav
+        class="flex flex-col md:flex-row justify-center items-center text-sm font-semibold space-y-4 md:space-x-4 md:space-y-0"
+      >
+        <a class="text-xs" href="https://www.tesla.com/about">Tesla © 2024</a>
+        <a class="text-xs" href="https://www.tesla.com/legal"
+          >Privacy & Legal</a
+        >
+        <a class="text-xs" href="https://service.tesla.com/vin-recall-search"
+          >Vehicle Recalls</a
+        >
+        <a class="text-xs" href="https://www.tesla.com/contact">Contact</a>
+        <a class="text-xs" href="https://www.tesla.com/blog">News</a>
+        <a class="text-xs" href="https://www.tesla.com/updates">Get Updates</a>
+        <a class="text-xs" href="https://www.tesla.com/findus/list"
+          >Locations</a
+        >
+      </nav>
+    </footer>
+    <!-- footer section ends -->
+    <!-- javascript -->
+    <script src="./index.js"></script>
   </body>
 </html>
